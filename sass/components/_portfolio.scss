@@ -75,11 +75,17 @@
     height: 294px;
 }
 
-.portfolio__link:hover .portfolio__box,
-.portfolio__link:focus .portfolio__box {
+
+.portfolio__box {
+
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
     opacity: 1;
     transform: translateY(-100%);
 }
+}
+
+
 
 .portfolio__box {
     width: 100%;
