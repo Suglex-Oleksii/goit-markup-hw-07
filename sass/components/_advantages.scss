@@ -1,12 +1,12 @@
-.advantages__paragraph {
+.advantages__item {
     max-width: 270px;
 }
 
-.advantages__paragraph:not(:last-child) {
+.advantages__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.advantages__list {
+.advantages__box {
     width: 270px;
     height: 120px;
     background-color: #f5f4fa;

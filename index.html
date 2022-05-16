@@ -20,27 +20,27 @@
   <body class="body">
     <!-- Section header -->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="nav">
-          <a class="logo" href="">Web<span class="logo-right">Studio</span></a>
+          <a class="logo" href="">Web<span class="logo__right">Studio</span></a>
           <ul class="navigator">
-            <li class="navigator__paragraph">
+            <li class="navigator__item">
               <a
                 class="navigator__link navigator__link--current"
                 href="index.html"
                 >Студия</a
               >
             </li>
-            <li class="navigator__paragraph">
+            <li class="navigator__item">
               <a class="navigator__link" href="portfolio.html">Портфолио</a>
             </li>
-            <li class="navigator__paragraph">
+            <li class="navigator__item">
               <a class="navigator__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contacts__paragraph">
+          <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com"
               ><svg class="contacts__icon--mail">
                 <use
@@ -49,7 +49,7 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts__paragraph">
+          <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111"
               ><svg class="contacts__icon--tel">
                 <use
@@ -155,10 +155,10 @@
       <!-- Section advantages -->
       <section class="section">
         <div class="container">
-          <h2 class="title--large visually-hidden">Наши преимущества</h2>
+          <h2 class="section__title visually-hidden">Наши преимущества</h2>
           <ul class="advantages">
-            <li class="advantages__paragraph">
-              <div class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__box">
                 <svg class="advantages__icon">
                   <use
                     href="./images/icons.svg/advantages/advantages-sprite.svg#antenna"
@@ -171,8 +171,8 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="advantages__paragraph">
-              <div class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__box">
                 <svg class="advantages__icon">
                   <use
                     href="./images/icons.svg/advantages/advantages-sprite.svg#clock"
@@ -185,8 +185,8 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantages__paragraph">
-              <div class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__box">
                 <svg class="advantages__icon">
                   <use
                     href="./images/icons.svg/advantages/advantages-sprite.svg#diagram"
@@ -199,8 +199,8 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages__paragraph">
-              <div class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__box">
                 <svg class="advantages__icon">
                   <use
                     href="./images/icons.svg/advantages/advantages-sprite.svg#astronaut"
@@ -218,11 +218,11 @@
       </section>
 
       <!-- Section presentation -->
-      <section class="section presentation-section">
+      <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="title--large">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="presentation">
-            <li class="presentation__paragraph">
+            <li class="presentation__item">
               <div class="presentation__thumb">
                 <img
                   class="presentation__img"
@@ -234,7 +234,7 @@
                 </div>
               </div>
             </li>
-            <li class="presentation__paragraph">
+            <li class="presentation__item">
               <div class="presentation__thumb">
                 <img
                   class="presentation__img"
@@ -246,7 +246,7 @@
                 </div>
               </div>
             </li>
-            <li class="presentation__paragraph">
+            <li class="presentation__item">
               <div class="presentation__thumb">
                 <img
                   class="presentation__img"
@@ -263,11 +263,11 @@
       </section>
 
       <!-- Section team -->
-      <section class="section team-section">
+      <section class="section section--other-background">
         <div class="container">
-          <h2 class="title--large">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team">
-            <li class="team__paragraph">
+            <li class="team__item">
               <img
                 class="team__img"
                 src="./images/studio/team/img-1.jpg"
@@ -277,7 +277,7 @@
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="messengers">
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.instagram.com"
@@ -291,7 +291,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.twitter.com"
@@ -305,7 +305,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.facebook.com"
@@ -319,7 +319,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.linkedin.com"
@@ -336,7 +336,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__paragraph">
+            <li class="team__item">
               <img
                 class="img-team"
                 src="./images/studio/team/img-2.jpg"
@@ -346,7 +346,7 @@
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="messengers">
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.instagram.com"
@@ -360,7 +360,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.twitter.com"
@@ -374,7 +374,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.facebook.com"
@@ -388,7 +388,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.linkedin.com"
@@ -405,7 +405,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__paragraph">
+            <li class="team__item">
               <img
                 class="img-team"
                 src="./images/studio/team/img-3.jpg"
@@ -415,7 +415,7 @@
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="messengers">
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.instagram.com"
@@ -429,7 +429,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.twitter.com"
@@ -443,7 +443,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.facebook.com"
@@ -457,7 +457,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.linkedin.com"
@@ -474,7 +474,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__paragraph">
+            <li class="team__item">
               <img
                 class="img-team"
                 src="./images/studio/team/img-4.jpg"
@@ -484,7 +484,7 @@
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="messengers">
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.instagram.com"
@@ -498,7 +498,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.twitter.com"
@@ -512,7 +512,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.facebook.com"
@@ -526,7 +526,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="messengers__paragraph">
+                  <li class="messengers__item">
                     <a
                       class="messengers__link"
                       href="https://www.linkedin.com"
@@ -551,9 +551,9 @@
     <!-- Section customers -->
     <section class="section">
       <div class="container">
-        <h2 class="title--large">Постоянные клиенты</h2>
+        <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="customers">
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -562,7 +562,7 @@
               </svg>
             </a>
           </li>
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -571,7 +571,7 @@
               </svg>
             </a>
           </li>
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -580,7 +580,7 @@
               </svg>
             </a>
           </li>
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -589,7 +589,7 @@
               </svg>
             </a>
           </li>
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -598,7 +598,7 @@
               </svg>
             </a>
           </li>
-          <li class="customers__paragraph">
+          <li class="customers__item">
             <a class="customers__link" href="">
               <svg class="customers__icon">
                 <use
@@ -616,20 +616,20 @@
       <div class="container footer-container">
         <div class="footer-logo">
           <a class="logo" href=""
-            >Web<span class="logo-right--colour">Studio</span></a
+            >Web<span class="logo__right--colour">Studio</span></a
           >
           <ul class="footer-address">
-            <li class="footer-address__paragraph">
+            <li class="footer-address__item">
               <a
                 class="footer-address__link footer-address__link--colour"
                 href=""
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="footer-address__paragraph">
+            <li class="footer-address__item">
               <a class="footer-address__link" href="">info@devstudio.com</a>
             </li>
-            <li class="footer-address__paragraph">
+            <li class="footer-address__item">
               <a class="footer-address__link" href="">+38 099 111 11 11</a>
             </li>
           </ul>
@@ -637,7 +637,7 @@
         <div class="footer-messengers">
           <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
           <ul class="footer-messengers__list">
-            <li class="messengers__paragraph">
+            <li class="messengers__item">
               <a
                 class="messengers__link messengers__link--сolour"
                 href="https://www.instagram.com"
@@ -651,7 +651,7 @@
                 </svg>
               </a>
             </li>
-            <li class="messengers__paragraph">
+            <li class="messengers__item">
               <a
                 class="messengers__link messengers__link--сolour"
                 href="https://www.twitter.com"
@@ -665,7 +665,7 @@
                 </svg>
               </a>
             </li>
-            <li class="messengers__paragraph">
+            <li class="messengers__item">
               <a
                 class="messengers__link messengers__link--сolour"
                 href="https://www.facebook.com"
@@ -679,7 +679,7 @@
                 </svg>
               </a>
             </li>
-            <li class="messengers__paragraph">
+            <li class="messengers__item">
               <a
                 class="messengers__link messengers__link--сolour"
                 href="https://www.linkedin.com"

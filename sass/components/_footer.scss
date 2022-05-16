@@ -17,7 +17,7 @@
     margin-top: 20px;
 }
 
-.footer-address__paragraph:not(:last-child) {
+.footer-address__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -31,19 +31,15 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-address__link--colour {
-    color: $background-header-color;
-}
-
-.footer-address__link {
-    color: rgba(255, 255, 255, 0.6);
 
     &:hover,
     &:focus {
         color: $background-header-color;
     }
+}
+
+.footer-address__link--colour {
+    color: $background-header-color;
 }
 
 .footer-messengers {
@@ -83,6 +79,10 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: $background-footer-color;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .form-footer__input::placeholder {
@@ -90,12 +90,6 @@
     font-size: 16px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.form-footer__input {
-    &:focus {
-        outline: none;
-    }
 }
 
 .form-footer__button {
@@ -117,10 +111,6 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-footer__button {
-    background-color: $active-button-color;
 
     &:hover {
         background-color: #188ce8;

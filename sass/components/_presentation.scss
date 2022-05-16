@@ -1,11 +1,10 @@
-.presentation-section {
+.section--no-padding-top {
     padding-top: 0;
 }
 
-.presentation__paragraph:not(:last-child) {
+.presentation__item:not(:last-child) {
     margin-right: 30px;
 }
-
 
 .presentation__thumb {
     position: relative;

@@ -1,8 +1,8 @@
-.team-section {
+.section--other-background {
     background-color: $background-second-color;
 }
 
-.team__paragraph {
+.team__item {
     width: 270px;
     background-color: #ffffff;
     border-bottom-right-radius: 4px;
@@ -11,10 +11,9 @@
         0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.team__paragraph:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
-
 
 .team__img {
     width: 270px;

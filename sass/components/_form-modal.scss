@@ -66,9 +66,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
 
-.button-close {
     &:hover {
         fill: #2196f3;
     }
@@ -111,6 +109,15 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: #2196f3;
+        outline: none;
+    }
+
+    &:focus~.form-modal__icon {
+        fill: #2196f3;
+    }
 }
 
 .form-modal__textarea {
@@ -123,6 +130,18 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: #2196f3;
+        outline: none;
+    }
+}
+
+.form-modal__textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .form-modal__icon {
@@ -134,37 +153,6 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-modal__textarea::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.form-modal__textarea {
-    border-color: rgba(33, 33, 33, 0.2);
-
-    &:focus {
-        border-color: #2196f3;
-        outline: none;
-    }
-}
-
-.form-modal__input {
-    border-color: rgba(33, 33, 33, 0.2);
-
-    &:focus {
-        border-color: #2196f3;
-        outline: none;
-    }
-}
-
-.form-modal__input {
-    &:focus~.form-modal__icon {
-        fill: #2196f3;
-    }
 }
 
 .checkbox__label {
@@ -188,6 +176,14 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+
+    &:checked+.checkbox__icon {
+        background-color: $active-button-color;
+        border-color: $active-button-color;
+        background-image: url(../images/icons.svg/form/check.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
 }
 
 .checkbox__icon {
@@ -206,12 +202,3 @@
     color: $active-button-color;
 }
 
-.checkbox__input {
-    &:checked+.checkbox__icon {
-        background-color: $active-button-color;
-        border-color: $active-button-color;
-        background-image: url(../images/icons.svg/form/check.svg);
-        background-size: contain;
-        background-origin: border-box;
-    }
-}

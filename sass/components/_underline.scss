@@ -3,6 +3,10 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover::after {
+        opacity: 1;
+    }
 }
 
 .navigator__link--current::after {
@@ -17,8 +21,3 @@
     left: 0;
 }
 
-.navigator__link--current {
-    &:hover::after {
-        opacity: 1;
-    }
-}

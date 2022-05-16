@@ -1,9 +1,9 @@
-.customers__paragraph {
+.customers__item {
     width: 170px;
     height: 92px;
 }
 
-.customers__paragraph:not(:last-child) {
+.customers__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -20,11 +20,6 @@
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers__link {
-    border-color: #afb1b8;
-    fill: #afb1b8;
 
     &:hover,
     &:focus {

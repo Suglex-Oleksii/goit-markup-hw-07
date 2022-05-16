@@ -4,12 +4,12 @@
     justify-content: center;
 }
 
-.messengers__paragraph {
+.messengers__item {
     width: 44px;
     height: 44px;
 }
 
-.messengers__paragraph:not(:last-child) {
+.messengers__item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -25,9 +25,6 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.messengers__link {
     background-color: rgba(255, 255, 255, 0.1);
 
     &:hover,
