@@ -115,7 +115,7 @@ img {
 }
 
 .header__container,
-.nav {
+.menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
